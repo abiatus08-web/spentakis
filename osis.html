@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSIS</title>
+    <link rel="icon" href="logo_besar.png" />
+    <!-- Menggunakan Tailwind CSS untuk styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Menggunakan Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Style untuk table agar lebih rapi */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: 600;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tbody tr:hover {
+            background-color: #e9ecef;
+        }
+		 ol {
+    counter-reset: item;
+    padding-left: 0;
+  }
+  li {
+    display: table;       /* supaya mirip tabel */
+    counter-increment: item;
+    margin-bottom: 10px;
+  }
+  li::before {
+    content: counters(item, ".") ". ";
+    display: table-cell;  /* nomor jadi kolom tersendiri */
+    padding-right: 10px;  /* jarak nomor dan teks */
+	
+  }
+  
+	
+  
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-3xl font-bold text-gray-800">OSIS</h1>
+            <p class="text-lg text-blue-600 font-semibold">SMP Negeri 3 Pakis, Kabupaten Magelang</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+
+  
+
+       <section class="py-8 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-red-800">ORGANISASI SISWA INTRA SEKOLAH</h2>
+                    
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                   <!-- Di sini Anda bisa menyematkan Google Calendar, atau menampilkan gambar kalender -->
+                   
+                   <div class="overflow-x-auto">
+                     <center>   
+					 <img src="osis/osis1.png" alt="Kalender Pendidikan" class="rounded-md w-45">
+					 <img src="osis/osis2.png" alt="Kalender Pendidikan" class="rounded-md w-45">
+					 <img src="osis/osis3.png" alt="Kalender Pendidikan" class="rounded-md w-45">
+					 <img src="osis/osis4.png" alt="Kalender Pendidikan" class="rounded-md w-45">
+					 <img src="osis/osis5.png" alt="Kalender Pendidikan" class="rounded-md w-45">
+					 <img src="osis/osis6.png" alt="Kalender Pendidikan" class="rounded-md w-45">
+					 <img src="osis/osis7.png" alt="Kalender Pendidikan" class="rounded-md w-45">
+					 <img src="osis/osis8.png" alt="Kalender Pendidikan" class="rounded-md w-45">
+					 <img src="osis/osis9.png" alt="Kalender Pendidikan" class="rounded-md w-45">
+					 <img src="osis/osis10.png" alt="Kalender Pendidikan" class="rounded-md w-45">
+					
+						</CENTER>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-8">
+        <div class="container mx-auto px-6 py-4 text-center">
+            <p>&copy; 2025 SMP Negeri 3 Pakis. OSIS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

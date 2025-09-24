@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFIL</title>
+    <link rel="icon" href="logo_besar.png" />
+    <!-- Menggunakan Tailwind CSS untuk styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Menggunakan Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Custom styling untuk font dan slider */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slider-item {
+            display: none;
+            transition: opacity 1s ease-in-out;
+        }
+        .slider-item.active {
+            display: block;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header dan Navigasi -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="text-2xl text-blue-600">
+                    <img src="logo_besar.png" alt="Gambar 1">
+                </div>
+                <a href="#" class="text-xl font-bold text-gray-800">SMP Negeri 3 Pakis</a>
+            </div>
+            
+            <!-- Menu untuk Desktop -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Beranda</a>
+                
+                    <a href="karakteristik.html" class="text-gray-600 hover:text-blue-600">Karakteristik Sekolah</a>
+                
+                    <a href="visi.html" class="text-gray-600 hover:text-blue-600">Visi & Misi</a>
+               
+                    <a href="organisasi.html" class="text-gray-600 hover:text-blue-600">Pengorganisasian</a>
+               
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Info Terkini</a>
+                <a href="#kontak" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Kontak</a>
+            </div>
+
+            <!-- Tombol Menu Mobile -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <main>
+        <!-- Bagian Slide Gambar (Hero Section) -->
+		
+		<section id="visimisi" class="py-5 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-800">Karakteristik Sekolah</h2>
+                    <p class="text-green-600 mt-2 leading-relaxed"> 
+					SMP Negeri 3 Pakis berlokasi di Jalan Kaponan – Pogalan Km. 2, Dusun Bongkotan, Desa Ketundan, Kecamatan Pakis. Resmi berdiri pada 11 Juli 2023, sekolah ini menjadi pilihan masyarakat dari berbagai desa di sekitarnya. Terletak di lereng Gunung Merbabu, sekolah memiliki lingkungan yang aman, nyaman, sejuk, dan kondusif untuk belajar. Potensi budaya lokal seperti gotong royong yang masih kental turut mendukung pembentukan nilai positif di sekolah.</p>
+					<a href="karakteristik.html" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Baca Selengkapnya &rarr;</a></h3>
+                </div>
+            </div>
+        </section>
+	
+        <!-- Bagian Visi & Misi -->
+        <section id="visimisi" class="py-1 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-800">Visi  Sekolah</h2>
+                    <p class="text-green-600 mt-2">Menjadi sekolah yang menghasilkan lulusan BELIA BERPELITA <br>(Berakhlak Mulia, Berdaya Saing, Peduli Lingkungan, dan Cinta Budaya).</p>
+					<a href="visi.html" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Baca Selengkapnya &rarr;</a></h3>
+				</div>
+            </div>
+        </section>
+		
+		<section id="visimisi" class="py-1 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-800">Pengorganisasian  Sekolah</h2>
+                    <p class="text-green-600 mt-2"> Pada Tahun Pelajaran 2025/2026, SMP Negeri 3 Pakis menggunakan <strong>Kurikulum Nasional</strong>. Pendekatan ini dirancang untuk mempersiapkan peserta didik dengan kecakapan hidup esensial yang dibutuhkan di masa depan sebagai warga Indonesia dan warga dunia.</p>
+					<a href="organisasi.html" class="mt-4 inline-block text-blue-600 font-semibold hover:underline">Baca Selengkapnya &rarr;</a></h3>
+				</div>
+            </div>
+        </section>
+	
+       
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Kolom 1: Tentang Sekolah -->
+                <div>
+                    <h3 class="font-bold text-xl mb-4">SMPN 3 Pakis</h3>
+                    <p class="text-gray-400">Jl. Kaponan-Pogalan km2. Ketundan, Pakis, Magelang (56194)</p>
+                    <p class="text-gray-400 mt-2">Telepon: (021) 123-4567</p>
+                    <p class="text-gray-400 mt-2">Email: smpn3pakismagelangkab.sch.id</p>
+                </div>
+                <!-- Kolom 2: Tautan Cepat -->
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#visimisi" class="text-gray-400 hover:text-white">Visi & Misi</a></li>
+                        <li><a href="#info" class="text-gray-400 hover:text-white">Berita Sekolah</a></li>
+                        <li><a href="#ekstra" class="text-gray-400 hover:text-white">Ekstrakurikuler</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Pendaftaran Siswa Baru</a></li>
+                    </ul>
+                </div>
+                <!-- Kolom 3: Media Sosial -->
+                 <div>
+                    <h3 class="font-bold text-lg mb-4">Ikuti Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 SMPN 3 Pakis. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Script untuk Slider Gambar ---
+        const sliderItems = document.querySelectorAll('.slider-item');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            sliderItems.forEach((item, i) => {
+                item.classList.remove('active');
+                item.style.opacity = '0';
+                if (i === index) {
+                    item.classList.add('active');
+                    setTimeout(() => item.style.opacity = '1', 50);
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % sliderItems.length;
+            showSlide(currentSlide);
+        }
+
+        // Ganti gambar setiap 5 detik
+        setInterval(nextSlide, 5000);
+
+        // --- Script untuk Menu Mobile ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+    </script>
+</body>
+</html>
